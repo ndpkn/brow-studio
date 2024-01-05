@@ -1,0 +1,77 @@
+@import '../../../style/variables.scss';
+
+.slider {
+    position: relative;
+    ::-webkit-scrollbar {
+        height: 5px;
+        border-radius: 10px;
+    }
+    ::-webkit-scrollbar-track {
+        background: rgba($dark, 0.3);
+    }
+    ::-webkit-scrollbar-thumb {
+        background: $accent;
+    }
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+
+}
+.arrows {
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.slides {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.slide {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    // width: 100%;
+    // min-height: 400px;
+    background-color: $light;
+    margin-right: 5px;
+    position: relative;
+    display: flex;
+    > img {
+        object-fit: cover;
+        // height: 650px;
+        height: 100%;
+        width: 100%;
+        background-color: $light;
+    }
+    > span {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        color: $light;
+        background-color: $accent;
+    }
+}
+.loaderBlock {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.show {
+    width: 100% !important;
+    opacity: 1;
+}
+.hide {
+    opacity: 0;
+    width: 0px !important;
+
+}

@@ -1,0 +1,60 @@
+@import '../../style//variables.scss';
+
+.block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.nameBlock {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 90%;
+    font-family: $titleFont;
+    display: flex;
+    flex-direction: column;
+    line-height: 3em;
+}
+.photoBlock {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    min-height: 600px;
+    background-color: $light;
+    // margin-top: 1em;
+}
+.photo {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.title {
+    font-size: 1.1em;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: $mainFont;
+    font-weight: 300;
+    color: $accent;
+}
+.name {
+    align-self: flex-start;
+    color: $accent;
+    font-weight: 300;
+    font-size: 3em;
+    margin: 0;
+    text-transform: uppercase;
+}
+.surname {
+    align-self: flex-end;
+    font-weight: 300;
+    font-size: 3em;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 800px) {
+    .photoBlock {
+        height: 700px;
+    }
+}

@@ -1,0 +1,39 @@
+@import '../../style/variables.scss';
+
+.lines {
+    position: relative;
+    height: 100px;
+    margin-top: 2rem;
+}
+.block {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140%;
+    height: 40px;
+    left: -20%;
+    // border-top: $accent 1px solid;
+    // border-bottom: $accent 1px solid;
+    // background-color: rgba($accent, 0.1);  
+    background-color: $accent;  
+    overflow: hidden;
+}
+.brows {
+    top: 30%;
+    rotate: -15deg;
+}
+.lashes {
+    top: 50%;
+    direction: rtl;
+    rotate: 10deg;
+}
+.text {
+    width: 100%;
+    margin: 0;
+    color: $light;
+    font-weight: 500;
+    word-spacing: 20px;
+    white-space: nowrap;
+    
+}

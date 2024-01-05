@@ -1,0 +1,87 @@
+@import '../../style/variables.scss';
+
+.header {
+    display: flex;
+    flex-direction: column;
+}
+.menu {
+    position: fixed;
+    background-color: rgba($light, 0.9);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: all 0.5s;
+    transform: translateX(150%);
+    z-index: 2;
+}
+.menuBlock {
+    width: 100%;
+    margin-right: 5%;
+    margin-top: 20%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.menuItem {
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    text-transform: lowercase;
+    > a { 
+        color: $dark;
+        text-decoration: none;
+        margin-right: 15px;
+    }
+}
+.show {
+    display: flex;
+    transition: all 0.5s;
+    transform: translate(0);
+}
+.title {
+    color: $accent;
+    font-size: 64px;
+}
+.text {
+    font-size: 24px;
+}
+.menuButton {
+    position: fixed;
+    right: 5%;
+    top: 2%;
+    width: 30px;
+    height: 30px;
+    z-index: 3;
+    cursor: pointer;
+    >span {
+        transition: all 0.5s;
+        width: 30px;
+        height: 2px;
+        background-color: $accent;
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        &:nth-last-of-type(2) {
+            top: calc(50% - 5px);
+        }
+        &:nth-last-of-type(3) {
+            top: calc(50% + 5px);
+        }
+    }
+}
+.active {
+    >span {
+        &:nth-last-of-type(1) {
+            transform: rotate(-45deg);
+            top: 35%;
+        }
+        &:nth-last-of-type(2) {
+            transform: rotate(45deg);
+        }
+        &:nth-last-of-type(3) {
+            display: none;
+        }
+    }
+}

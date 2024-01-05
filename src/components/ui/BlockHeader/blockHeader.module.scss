@@ -1,0 +1,13 @@
+@import '../../../style/variables.scss';
+.block {
+    display: flex;
+    width: 100%;
+}
+.text {
+    font-family: $headersFont;
+    font-size: 2em;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0;
+    color: $accent;
+}

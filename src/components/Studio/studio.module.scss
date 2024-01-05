@@ -1,0 +1,44 @@
+@import '../../style/variables.scss';
+
+.block {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+}
+.blockHeader {
+    margin-bottom: 2em;
+}
+.mapBlock {
+    overflow: hidden;
+    height: 100%;
+}
+.map {
+    height: 0;
+    overflow: hidden;
+    transform: translateY(-450px);
+    transition: all 0.5s;
+    opacity: 0;
+    padding-bottom: 50px;
+    &_frame {
+        background-color: #fff;
+    }
+}
+.list {
+    text-align: left;
+    padding-left: 1em;
+    list-style-position: outside;
+    list-style-type: circle;
+    text-transform: lowercase;
+    &> li::marker {
+        color: $accent;
+    }
+}
+
+.show {
+    height: 450px;
+    transition: all 0.5s;
+    transform: translateY(0);
+    overflow: hidden;
+    opacity: 1;
+}
+

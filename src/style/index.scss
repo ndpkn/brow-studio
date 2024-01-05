@@ -1,0 +1,61 @@
+@import './variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Lacquer&display=swap');
+
+
+
+
+:root {
+  font-family: $mainFont;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: $dark;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100dvh;
+  background-color: $light;
+  background-image: url('../assets/pattern.svg');
+}
+
+h1 {
+  font-size: 3.3em;
+  line-height: 1.1;
+}
+
+.slick-dots li button:before {
+  color: $dark;
+}
+
+.slick-dots li.slick-active button:before {
+  color: $accent;
+}
+
+@media (prefers-color-scheme: light) {
+  /* :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  } */
+}
