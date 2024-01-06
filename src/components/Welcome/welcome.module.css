@@ -1,0 +1,63 @@
+.block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.nameBlock {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 90%;
+  font-family: "Lacquer", cursive;
+  display: flex;
+  flex-direction: column;
+  line-height: 3em;
+}
+
+.photoBlock {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  min-height: 600px;
+}
+
+.photo {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.title {
+  font-size: 1.1em;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  color: #ff00ae;
+}
+
+.name {
+  align-self: flex-start;
+  color: #ff00ae;
+  font-weight: 300;
+  font-size: 3em;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.surname {
+  align-self: flex-end;
+  font-weight: 300;
+  font-size: 3em;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 800px) {
+  .photoBlock {
+    height: 700px;
+  }
+}
+
+/*# sourceMappingURL=welcome.module.css.map */

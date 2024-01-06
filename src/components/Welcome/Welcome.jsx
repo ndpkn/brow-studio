@@ -1,5 +1,5 @@
 import styles from "./welcome.module.scss";
-import main from '../../assets/images/main.webp'
+import main from '../../assets/images/main2.webp'
 import Button from "../ui/Button/Button";
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
@@ -35,11 +35,11 @@ const Welcome = () => {
                         className={styles.photo}
                         src={main}
                         alt="main photo"
-                    /> :
+                    />
                 <div className={styles.nameBlock}>
                     <h2 ref={nameRef} style={{fontFamily: 'Lacquer'}} className={styles.name}>Evelina </h2>
-                    <h2 ref={surnameRef} style={{fontFamily: 'Lacquer'}}className={styles.surname}>maslova</h2>
-                    <h1 ref={titleRef}className={styles.title}>brow master</h1>
+                    <h2 ref={surnameRef} style={{fontFamily: 'Lacquer'}} className={styles.surname}>maslova</h2>
+                    <h1 ref={titleRef} className={styles.title}>brow master</h1>
                 </div>
             </div>
             <div>
