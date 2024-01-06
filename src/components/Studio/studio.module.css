@@ -1,0 +1,22 @@
+.block {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+}
+
+.blockHeader {
+  margin-bottom: 2em;
+}
+
+.list {
+  text-align: left;
+  padding-left: 1em;
+  list-style-position: outside;
+  list-style-type: circle;
+  text-transform: lowercase;
+}
+.list > li::marker {
+  color: #ff00ae;
+}
+
+/*# sourceMappingURL=studio.module.css.map */
