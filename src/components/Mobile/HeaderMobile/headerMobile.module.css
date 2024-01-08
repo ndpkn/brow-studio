@@ -1,0 +1,26 @@
+.header {
+  max-height: 80px;
+  width: 100%;
+  background-color: #efe9e5;
+  border-top: 2px #ff00ae solid;
+  position: fixed;
+  z-index: 9999;
+  bottom: 0;
+  left: 0;
+}
+
+.menuBlock {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  padding: 5px 0 5px 0;
+  margin: 0;
+}
+.menuBlock_item > a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #202124;
+}
+
+/*# sourceMappingURL=headerMobile.module.css.map */
