@@ -1,15 +1,16 @@
 import BlockHeader from "../ui/BlockHeader/BlockHeader";
 import CarouselItem from "../ui/Carousel/CarouselItem";
-import styles from "./studio.module.scss";
 import Carousel from "../ui/Carousel/Carousel";
 import MapView from "../MapView/MapView.jsx";
-import studio1 from "../../assets/images/studio/IMG_5100.webp";
-import studio2 from "../../assets/images/studio/IMG_5119.webp";
-import studio3 from "../../assets/images/studio/IMG_5353.webp";
-import studio4 from "../../assets/images/studio/IMG_5358.webp";
-import studio5 from "../../assets/images/studio/IMG_5365.webp";
-import studio6 from "../../assets/images/studio/IMG_5369.webp";
-import "./studio.module.scss";
+
+import studio1 from "../../assets/images/studio/studio1.webp";
+import studio2 from "../../assets/images/studio/studio2.webp";
+import studio3 from "../../assets/images/studio/studio3.webp";
+import studio4 from "../../assets/images/studio/studio4.webp";
+import studio5 from "../../assets/images/studio/studio5.webp";
+import studio6 from "../../assets/images/studio/studio6.webp";
+
+import styles from "./studio.module.scss";
 
 const Studio = () => {
   const settings = {
