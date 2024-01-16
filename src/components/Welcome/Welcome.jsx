@@ -35,7 +35,6 @@ const Welcome = () => {
                         className={styles.photo}
                         src={main}
                         alt="main photo"
-                        rel={preload}
                     />
                 <div className={styles.nameBlock}>
                     <h2 ref={nameRef} style={{fontFamily: 'Lacquer'}} className={styles.name}>Evelina </h2>
