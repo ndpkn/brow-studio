@@ -1,14 +1,10 @@
-@import './variables.scss';
-@import url('https://fonts.googleapis.com/css2?family=Lacquer&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Lacquer&display=swap");
 :root {
-  font-family: $mainFont;
+  font-family: "Montserrat", sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
   color-scheme: light dark;
-  color: $dark;
-
+  color: #202124;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -25,8 +21,8 @@ a {
 
 body {
   min-width: 320px;
-  background-color: $light;
-  background-image: url('../assets/pattern.svg');
+  background-color: #efe9e5;
+  background-image: url("../assets/pattern.svg");
 }
 
 h1 {
@@ -35,11 +31,11 @@ h1 {
 }
 
 .slick-dots li button:before {
-  color: $dark;
+  color: #202124;
 }
 
 .slick-dots li.slick-active button:before {
-  color: $accent;
+  color: #ff00ae;
 }
 
 @media (prefers-color-scheme: light) {
@@ -54,3 +50,5 @@ h1 {
     background-color: #f9f9f9;
   } */
 }
+
+/*# sourceMappingURL=index.css.map */
